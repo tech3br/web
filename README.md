@@ -3,7 +3,7 @@
 ## Concepts Learning
 
 ### DDD
-    [] Concept
+    [ ] Concept
     [] Branch Concept
 ### TDD
     [] Concept
