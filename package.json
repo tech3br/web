@@ -5,7 +5,12 @@
   "author": "Daniel Filgueira",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "pnpm test -- --watch",
+    "test:staged": "pnpm test -- --findRelatedTests",
+    "test:ci": "pnpm test -- --coverage"
   },
   "keywords": [],
   "license": "ISC",
